@@ -1,0 +1,170 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* background-color: white; */
+    margin: 0;
+}
+
+.headercont, .underheadercont, .secondmidcont, .thirdmidcont, .fourthmidcont, footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.underheadercont {
+    padding: 100px 0;
+}
+
+.headercont, .underheadercont, footer {
+    background-color: rgb(31, 41, 55);
+    color: white;
+}
+
+
+
+
+
+button {
+    font-size: large;
+    color: white;
+    background-color: rgb(56, 130, 246);
+    width: fit-content;
+    padding: 10px 40px;
+    border-style: none;
+    border-radius: 5px;
+    margin-bottom: 0px;
+    margin: 0;
+}
+
+.header {
+    width: 1200px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header ul {
+    display: flex;
+    list-style: none;  
+    gap: 25px;
+}
+
+.underheader {
+    display: flex;
+    max-width: 1200px;
+}
+
+.leftUH, .UHpicture {
+    height: auto;
+}
+
+.leftUH {
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    margin-right: 40px;
+
+}
+
+.leftUH h1, .leftUH p {
+    margin: 0;
+}
+
+.leftUH h1 {
+    font-size: 50px;
+    margin-bottom: 5px;
+}
+
+.leftUH p {
+    font-size: 20px;
+}
+
+.leftUH button {
+    margin-top: 15px;
+}
+
+.UHpicture {
+    margin: 0;
+    background-color: rgb(148, 163, 184);
+    width: 550px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+}
+
+.secondmid {
+    width: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-content: center;
+}
+
+.secondmid ul {
+    display: flex;
+    list-style: none;
+    gap: 60px;
+    justify-content: center;
+    align-items: center;
+}
+
+.secondmid h2 {
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.block div {
+    height: 180px;
+    width: 180px;
+    border: solid 5px;
+    border-color: rgb(56, 130, 246);
+    border-radius: 30px;
+}
+
+.secondmid .block {
+    display: flex;
+    flex-direction: column;
+}
+
+.secondmid p {
+    width: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.thirdmidcont {
+    background-color: rgb(229, 231, 235);
+}
+
+.thirdmid {
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 0px;
+}
+
+.thirdmid h2 {
+    color: rgb(100, 110, 124);
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    font-weight: 100;
+    font-size: 35px;
+}
+
+.thirdmid h3 {
+    text-align: right;
+}
+
+
+

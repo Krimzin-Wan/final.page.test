@@ -1,0 +1,234 @@
+/* Color Palette Setup */
+:root {
+  --bg-dark: rgb(31, 41, 55);
+  --text-light-main: rgb(249, 248, 248);
+  --text-light-sub: rgb(229, 231, 235);
+  --text-dark: rgb(31, 41, 55);
+  --text-muted: rgb(75, 85, 99);
+  --action-blue: rgb(56, 130, 246);
+  --bg-light: rgb(229, 231, 235);
+  --placeholder-bg: rgb(148, 163, 184);
+}
+
+/* Page Reset & Base Settings */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Common Layout Bounds across your wrappers */
+.header, .underheader, .secondmid, .fourthmid {
+  max-width: 1000px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 24px;
+}
+
+/* --- header --- */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px;
+  background-color: var(--bg-dark);
+  max-width: 100%; /* Spans full page width */
+}
+
+.header h3 {
+  color: var(--text-light-main);
+  font-size: 24px;
+}
+
+.header-links {
+  display: flex;
+  gap: 24px;
+  list-style-type: none;
+}
+
+.header-links li {
+  color: var(--text-light-sub);
+  font-size: 18px;
+  cursor: pointer;
+}
+
+/* --- underheader --- */
+.underheader {
+  background-color: var(--bg-dark);
+  max-width: 100%; /* Spans full page width */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 64px;
+  padding: 80px 10%;
+}
+
+.leftUH {
+  max-width: 450px;
+}
+
+.leftUH h1 {
+  font-size: 48px;
+  font-weight: 900;
+  color: var(--text-light-main);
+  margin-bottom: 8px;
+  line-height: 1.2;
+}
+
+.leftUH p {
+  font-size: 18px;
+  color: var(--text-light-sub);
+  margin-bottom: 24px;
+  line-height: 1.4;
+}
+
+/* Global Button Properties using your naming pattern */
+.sign-up {
+  background-color: var(--action-blue);
+  color: var(--text-light-main);
+  padding: 8px 32px;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.UHpicture {
+  background-color: var(--placeholder-bg);
+  width: 450px;
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+}
+
+.UHpicture p {
+  color: var(--text-light-main);
+  font-size: 16px;
+}
+
+/* --- secondmid --- */
+.secondmid {
+  padding: 64px 24px 80px 24px;
+  text-align: center;
+}
+
+.secondmid h2 {
+  font-size: 36px;
+  font-weight: 900;
+  color: var(--text-dark);
+  margin-bottom: 48px;
+}
+
+.blocks-grid {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  list-style-type: none;
+  flex-wrap: wrap;
+}
+
+.block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 150px;
+}
+
+.cube {
+  width: 150px;
+  height: 150px;
+  border: 4px solid var(--action-blue);
+  border-radius: 12px;
+  background-color: #fff;
+  margin-bottom: 12px;
+}
+
+.block p {
+  color: var(--text-muted);
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+/* --- thirdmid --- */
+.thirdmid {
+  background-color: var(--bg-light);
+  padding: 100px 15%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.thirdmid h2 {
+  font-size: 36px;
+  font-style: italic;
+  font-weight: 300;
+  color: var(--text-dark);
+  line-height: 1.4;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.thirdmid h3 {
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--text-dark);
+  text-align: right;
+  max-width: 800px;
+  margin: 16px auto 0 auto;
+  width: 100%;
+}
+
+/* --- fourthmid --- */
+.fourthmid {
+  padding: 80px 24px;
+}
+
+.calltoaction {
+  background-color: var(--action-blue);
+  border-radius: 12px;
+  padding: 48px 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 950px;
+  margin: 0 auto;
+}
+
+.calltoaction .text {
+  color: var(--text-light-main);
+}
+
+.calltoaction h3 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+.calltoaction p {
+  color: var(--text-light-sub);
+  font-size: 16px;
+}
+
+.cta-btn {
+  border: 2px solid var(--text-light-main);
+}
+
+/* --- footer --- */
+footer {
+  background-color: var(--bg-dark);
+  color: var(--text-light-sub);
+  padding: 32px 0;
+  text-align: center;
+  font-size: 16px;
+  margin-top: auto; /* Pushes footer down if page content is short */
+}
